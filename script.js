@@ -15,9 +15,11 @@ console.log(total)
 // How many full tickets can you buy, and what's the leftover amount?
  let budget = 40
  let price = 9.50
- let leftoverAmount = budget / price
+ let leftoverAmount = budget % price
+let ticketsBought = Math.floor(budget / price)
 
- console.log(leftoverAmount)
+ console.log("Leftover amount", leftoverAmount)
+ console.log("tickets bought", ticketsBought)
 
 /* 3. Dog Age Converter
 Convert a dog’s age to human years
